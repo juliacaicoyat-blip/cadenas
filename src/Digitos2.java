@@ -1,17 +1,24 @@
 public class Digitos2 {
     public static void main(String[] args) {
-        //tengo una bloqueada de cuidao'
-        // String texto="gyh 453 212";
-        //String cadena[]=texto.split("\\s+");
-        String palabra="hola m1 nombre es Th0r y su nom8re es lo0i";
-        boolean esNumero= true;
-        int contador=0;
-        for (int i = 0; i < palabra.length(); i++) {
-            if(!Character.isDigit(palabra.charAt(i))){
-                esNumero=false;
-                break;
+        //tengo una bloqueada de cuidado
+        //mi hermana me ayuda
 
-            }
+         String cadena="gyh 453 212";
+         String palabras[]=cadena.split("\\s+");
+         String palabra="hola m1 nombre es Th0r y su nom8re es lo0i";
+         boolean esNumero= true;
+         int contador=0;
+         System.out.println(Digitos2Test(contador, palabra,esNumero));
+         for (int i = 0; i < palabra.length(); i++) {
+             for (int j = 0; j <cadena.length() ; j++) {
+                 if(!Character.isDigit(palabra.charAt(i))){
+                    esNumero=false;
+                    break;
+
+                 }
+
+             }
+
 
         }
 
@@ -20,8 +27,8 @@ public class Digitos2 {
         }
         System.out.println("es digitos "+contador);
     }
-    public static boolean Digitos2Test (int contador, String palabra){
-        int  n=0;
+    public static boolean Digitos2Test (int contador, String palabra,boolean esNumero){
+
 
     }
 
